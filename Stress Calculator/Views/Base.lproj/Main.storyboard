@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calculate View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CalculateViewController" customModule="Stress_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cx-uM-CKR">
+                                <rect key="frame" x="39" y="820" width="350" height="42"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.69019607839999997" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="Lp6-Eh-Fvg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="28"/>
+                                <state key="normal" title="CALCULATE STRESS">
+                                    <color key="titleColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aoM-we-oFj"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6J-ve-fWm">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="838"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="250" translatesAutoresizingMaskIntoConstraints="NO" id="amj-Es-aVB">
+                                        <rect key="frame" x="51.666666666666657" y="70" width="325" height="36.333333333333343"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P(N)" textAlignment="center" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="KGG-7i-9s4">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="36.333333333333336"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.69019607839999997" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="7vD-ls-iNQ">
+                                                <rect key="frame" x="325" y="0.0" width="0.0" height="36.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="15"/>
+                                                <color key="textColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Area(m2)" textAlignment="center" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="mKA-CT-F2J">
+                                        <rect key="frame" x="27" y="270" width="126" height="36.333333333333314"/>
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.69019607839999997" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainBodyDiagram" translatesAutoresizingMaskIntoConstraints="NO" id="kB1-b6-Yap">
+                                        <rect key="frame" x="39" y="20" width="350" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="K8P-s4-Djd"/>
+                                            <constraint firstAttribute="width" constant="350" id="m1w-EI-geF"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="amj-Es-aVB" firstAttribute="top" secondItem="T6J-ve-fWm" secondAttribute="top" constant="70" id="KL8-eT-Br3"/>
+                                    <constraint firstItem="kB1-b6-Yap" firstAttribute="centerX" secondItem="T6J-ve-fWm" secondAttribute="centerX" id="V1e-Wb-Ax4"/>
+                                    <constraint firstItem="mKA-CT-F2J" firstAttribute="centerX" secondItem="T6J-ve-fWm" secondAttribute="centerX" constant="-124" id="Yol-IU-4a2"/>
+                                    <constraint firstItem="kB1-b6-Yap" firstAttribute="top" secondItem="T6J-ve-fWm" secondAttribute="top" constant="20" id="c3v-zV-v2N"/>
+                                    <constraint firstItem="mKA-CT-F2J" firstAttribute="top" secondItem="kB1-b6-Yap" secondAttribute="bottom" id="dgn-yy-bm1"/>
+                                    <constraint firstItem="amj-Es-aVB" firstAttribute="centerX" secondItem="T6J-ve-fWm" secondAttribute="centerX" id="j7X-Rc-bxu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.83921568627450982" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="T6J-ve-fWm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EfQ-RM-w7L"/>
+                            <constraint firstItem="1cx-uM-CKR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H12-XL-U5g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1cx-uM-CKR" secondAttribute="bottom" constant="30" id="Q6r-r0-Drt"/>
+                            <constraint firstItem="T6J-ve-fWm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mYv-on-B68"/>
+                            <constraint firstItem="T6J-ve-fWm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wlo-cV-W8s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T6J-ve-fWm" secondAttribute="bottom" constant="54" id="xiw-78-mJd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="areaTextField" destination="mKA-CT-F2J" id="qaz-h8-83D"/>
+                        <outlet property="leftForceTextField" destination="KGG-7i-9s4" id="yty-o2-E63"/>
+                        <outlet property="rightSideLabel" destination="7vD-ls-iNQ" id="r5U-Dm-TTH"/>
+                        <segue destination="mF4-Ay-wDR" kind="presentation" identifier="goToResult" modalPresentationStyle="fullScreen" id="1OM-b5-vyV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="73.660714285714278"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="6qi-JL-Fhp">
+            <objects>
+                <viewController id="mF4-Ay-wDR" customClass="ResultViewController" customModule="Stress_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DPW-kH-IdS">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESULT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8m-tu-i6P">
+                                <rect key="frame" x="135" y="114" width="158" height="43"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="40"/>
+                                <color key="textColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axk-oS-AjQ">
+                                <rect key="frame" x="189" y="187" width="50" height="43"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.69019607839999997" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="40"/>
+                                <color key="textColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLC-T5-nWK">
+                                <rect key="frame" x="39" y="820" width="350" height="42"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.69019607839999997" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="EKR-oT-n2l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="28"/>
+                                <state key="normal" title="RECALCULATE">
+                                    <color key="titleColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="recalculatePressed:" destination="mF4-Ay-wDR" eventType="touchUpInside" id="6ap-ZF-2uM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LXf-4C-K7L"/>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.83921568629999999" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WLC-T5-nWK" firstAttribute="centerX" secondItem="DPW-kH-IdS" secondAttribute="centerX" id="1It-g9-Jub"/>
+                            <constraint firstItem="axk-oS-AjQ" firstAttribute="top" secondItem="L8m-tu-i6P" secondAttribute="bottom" constant="30" id="A3j-ET-wda"/>
+                            <constraint firstItem="LXf-4C-K7L" firstAttribute="bottom" secondItem="WLC-T5-nWK" secondAttribute="bottom" constant="30" id="AYs-3v-0cB"/>
+                            <constraint firstItem="L8m-tu-i6P" firstAttribute="centerX" secondItem="DPW-kH-IdS" secondAttribute="centerX" id="eYd-a4-pPL"/>
+                            <constraint firstItem="axk-oS-AjQ" firstAttribute="centerX" secondItem="DPW-kH-IdS" secondAttribute="centerX" id="fDI-fX-OMO"/>
+                            <constraint firstItem="L8m-tu-i6P" firstAttribute="top" secondItem="LXf-4C-K7L" secondAttribute="top" constant="70" id="xV3-gY-UJg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stressLabel" destination="axk-oS-AjQ" id="X20-oM-Z4n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XKc-gs-GpY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.86956521739137" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MainBodyDiagram" width="1049.6666259765625" height="877"/>
+    </resources>
+</document>
